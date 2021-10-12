@@ -1,3 +1,6 @@
+--Code taken from the YouTuber Alex The Analyst
+
+
 
 select *
 from PortfolioProject..CovidDeaths
