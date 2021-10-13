@@ -26,7 +26,7 @@ order by 1,2
 select date, location, population, total_cases, (total_cases/population)*100 as PercentPopulationGotCovid, 
 total_deaths, (total_deaths/population)*100 as PercentagePopulationDeath
 from PortfolioProject..CovidDeaths
-where location like '%states'
+where location like '%states%'
 order by 1,2
 
 --Likelihood of dying
