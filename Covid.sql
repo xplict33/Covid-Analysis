@@ -24,9 +24,9 @@ order by 1,2
 
 --Percentage of people that got covid vs people that died from covid
 select date, location, population, total_cases, (total_cases/population)*100 as PercentPopulationGotCovid, 
-total_deaths, (total_deaths/population)*100 as PercentagePopulationDeath
+total_deaths, (total_deaths/total_cases)*100 as PercentagePopulationDeath
 from PortfolioProject..CovidDeaths
-where location like '%states%'
+where location like '%states'
 order by 1,2
 
 --Likelihood of dying
